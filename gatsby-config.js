@@ -1,6 +1,9 @@
 module.exports = {
-    plugins: [
-        {
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: 'gatsby-source-buzzsprout',
       options: {
         // You will need to generate an access token and get the podcast ID from your account
@@ -10,5 +13,5 @@ module.exports = {
         
       },
     },
-    ]
+  ]
 }
